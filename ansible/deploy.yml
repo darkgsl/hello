@@ -55,7 +55,7 @@
 
     - name: enable our nginx config
       file:
-        src:"/etc/nginx/sites-available/hello.conf"
+        src: "/etc/nginx/sites-available/hello.conf"
         dest: "/etc/nginx/sites-enabled/hello.conf"
         state: link
       notify: restart nginx
